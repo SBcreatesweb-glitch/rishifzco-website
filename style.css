@@ -1688,3 +1688,52 @@ NAVBAR SCROLLED
     }
 
 }
+/* =================================
+   MOBILE NAVIGATION FIX
+================================= */
+
+@media (max-width: 768px) {
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        background: rgba(10, 14, 20, 0.98);
+
+        padding: 20px 25px 25px;
+
+        border-top: 1px solid rgba(255,255,255,0.12);
+
+        z-index: 9999;
+
+        box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+
+        padding: 14px 10px;
+
+        color: #ffffff !important;
+
+        font-size: 18px;
+        font-weight: 500;
+
+        border-radius: 8px;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+        background: rgba(255,107,26,0.15);
+        color: #ff6b1a !important;
+    }
+
+}
